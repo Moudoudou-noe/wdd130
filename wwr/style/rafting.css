@@ -1,76 +1,98 @@
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #FFD700;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+}
+
 body {
-    font-family: 'YourTextFont', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Change to your primary color */
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
-    background-color:  #f9f9f9; /* Use your primary color */
-    color: white;
-    padding: 20px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
 }
 
-header .logo img {
-    width: 150px; /* Adjust as needed */
-    height: auto;
-}
-
-nav {
-    margin: 20px 0; /* Optional margin for spacing */
+.logo {
+    height: 50px;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
+nav a {
     text-decoration: none;
-}
-
-main {
-    padding: 20px;
+    color: white;
 }
 
 .hero {
-    background-image: url('../images/Capture\ d’écran\ 2024-08-16\ 193849.jpg'); /* Placeholder for a hero image */
-    height: 400px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-.content {
-    padding: 20px;
+    position: relative;
     text-align: center;
 }
 
-h1, h2 {
-    color:rgb(96, 127, 127); /* Use your accent colors */
+.hero-img {
+    width: 100%;
+    height: auto;
 }
-span{
-    padding: 0;
-    content: visibility 10px;
-    color: aqua;
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.adventure-img {
+    float: right;
+    width: 100px;
+    height: auto;
+}
+
+.images {
+    display: flex;
+    gap: 10px;
+}
+
+.history, .adventure {
+    margin: 2rem 0;
+    text-align: center;
 }
 
 footer {
-    background-color: rgb(80, 180, 180); /* Use your secondary color */
-    color: white;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
 }
