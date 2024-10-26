@@ -44,7 +44,6 @@ nav a {
     width: 100%;
     height: auto;
 }
-
 .hero h1 {
     position: absolute;
     top: 20%;
@@ -58,7 +57,10 @@ nav a {
     margin: 2rem 0;
     text-align: center;
 }
-
+.image-noe{
+    width: 97%;
+    height: auto;
+}
 .images {
     display: flex;
     gap: 10px;
