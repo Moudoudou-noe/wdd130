@@ -9,6 +9,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
+    margin: 0; /* Ensure no default margins affect layout */
 }
 
 header {
@@ -53,26 +54,18 @@ nav a {
     color: white;
 }
 
-.hero article {
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-}
-
-.adventure-img {
-    float: right;
-    width: 100px;
-    height: auto;
+.newsletter {
+    margin: 2rem 0;
+    text-align: center;
 }
 
 .images {
     display: flex;
     gap: 10px;
-    justify-content: center; /* Centers the images horizontally */
+    justify-content: center;
 }
 
-.history, .adventure {
+.history, .adventure, .contact-info, .employee-profiles {
     margin: 2rem 0;
     text-align: center;
 }
